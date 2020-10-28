@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+</head>
+
+<body>
+  <script>
+
+    const pressed = [];
+    const secretWord = 'love';
+    var cornify_count = 0;
+    window.addEventListener('keyup', (e) => {
+      pressed.push(e.key);
+      pressed.splice(-secretWord.length - 1, pressed.length - secretWord.length);
+      if (pressed.join('').includes(secretWord)) {
+        alert('One unicorn or rainbow was created!');
+        cornify_add();
+        console.log(pressed)
+      }
+    })
+
+  </script>
+</body>
+
+</html>
