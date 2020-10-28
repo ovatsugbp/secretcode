@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="" rel="noopener">
-  <img width=600px height=300px src="image.gif" alt="project ilustration"></a>
+  <img width=600px height=500px src="image.gif" alt="project ilustration"></a>
 </p>
 
 ### Author
